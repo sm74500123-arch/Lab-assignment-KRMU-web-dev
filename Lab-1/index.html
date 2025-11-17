@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Protfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Sameer khan</h1>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#project">My Project</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+  <hr>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="myself.jpg" alt="profile image" width="150" style="border-radius: 50%" />
+      <p>
+        I am passionate about learning and solving real world problems with
+        the help of intelligent AI models.
+      </p>
+    </section>
+    
+    <section id="project">
+      <h2>My Projects</h2>
+      <table border=".5">
+        <tbody>
+          <tr>
+            <th>Projects</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Profolio website</td>
+            <td>A personal portfolio website using HTML and CSS.</td>
+          </tr>
+          <tr>
+            <td>A single player game</td>
+            <td>A simple 2d game in godot engine</td>
+          </tr>
+          <tr>
+            <td>Calculator</td>
+            <td>A simple Calculator in Python</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+   
+    <section id="skills">
+      <h2>Tech stack</h2>
+      <table border=".5">
+        <tbody>
+          <tr>
+            <th>Skills</th>
+            <th>Level</th>
+          </tr>
+          <tr>
+            <td>Html</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Intermediate</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="username">Name :</label>
+        <input type="text" id="username" placeholder="Enter your name" />
+        <br /><br />
+        <label for="email">Email :</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <br /><br />
+        <label for="message">Message :</label>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+      </form>
+      <br /><br />
+      <button type="submit">Send</button>
+    </section>
+  
+  </main>
+  
+</body>
+</html>
