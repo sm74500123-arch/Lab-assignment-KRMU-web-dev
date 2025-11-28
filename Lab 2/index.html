@@ -1,103 +1,138 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Protfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navjot singh| Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>Sameer khan</h1>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#project">My Project</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact Me</a>
-    </nav>
-  </header>
-  <hr>
+    <header class="site-header">
+        <div class="container header-content">
+            <div>
+                <h1 class="logo">Navjot singh</h1>
+                <p class="tagline">CS Student • Web & Python Enthusiast</p>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="myself.jpg" alt="profile image" width="150" style="border-radius: 50%" />
-      <p>
-        I am passionate about learning and solving real world problems with
-        the help of intelligent AI models.
-      </p>
-    </section>
-    
-    <section id="project">
-      <h2>My Projects</h2>
-      <table border=".5">
-        <tbody>
-          <tr>
-            <th>Projects</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td>Profolio website</td>
-            <td>A personal portfolio website using HTML and CSS.</td>
-          </tr>
-          <tr>
-            <td>A single player game</td>
-            <td>A simple 2d game in godot engine</td>
-          </tr>
-          <tr>
-            <td>Calculator</td>
-            <td>A simple Calculator in Python</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-   
-    <section id="skills">
-      <h2>Tech stack</h2>
-      <table border=".5">
-        <tbody>
-          <tr>
-            <th>Skills</th>
-            <th>Level</th>
-          </tr>
-          <tr>
-            <td>Html</td>
-            <td>Advanced</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Intermediate</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>Intermediate</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="username">Name :</label>
-        <input type="text" id="username" placeholder="Enter your name" />
-        <br /><br />
-        <label for="email">Email :</label>
-        <input type="email" id="email" placeholder="Enter your email" />
-        <br /><br />
-        <label for="message">Message :</label>
-        <textarea id="message" placeholder="Enter your message"></textarea>
-      </form>
-      <br /><br />
-      <button type="submit">Send</button>
-    </section>
-  
-  </main>
-  
+    <main class="container">
+
+
+        <section id="about" class="section">
+            <div class="about-layout">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hey, I'm Navjot singh. I am curious and hands-on, always exploring, building, and improving my projects.
+I am creative and persistent, pushing every idea until it becomes something real.
+
+
+                </div>
+                <div class="about-photo">
+                    <img src="myself.jpg" alt="Photo of Moin Khan">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="card-grid">
+
+                <div class="card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A simple personal portfolio website built using plain HTML and CSS.
+                        This is where I experiment with layouts and styling.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>AI File Renamer</h3>
+                    <p>
+                        A Python script that renames my <code>.py</code> files in order.
+                        It helps me keep my coding folders organised. Available on my GitHub.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>React Portfolio (WIP)</h3>
+                    <p>
+                        A more advanced version of my portfolio using React. Work in progress
+                        and not public yet, but I'm using it to learn components and props.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>
+                    <span>HTML</span>
+                    <span class="skill-level">Advanced</span>
+                </li>
+                <li>
+                    <span>CSS</span>
+                    <span class="skill-level">Intermediate</span>
+                </li>
+                <li>
+                    <span>JavaScript</span>
+                    <span class="skill-level">Intermediate</span>
+                </li>
+                <li>
+                    <span>Python</span>
+                    <span class="skill-level">Intermediate</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p class="contact-note">
+                If you’d like to reach out, feel free to drop a message using this form.
+            </p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter your message"></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Navjot singh• Built with HTML & CSS</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
